@@ -4,6 +4,11 @@ import java.awt.event.*;
 
 public class GUIexa implements ActionListener
 {
+	JPanel c1 = new JPanel();
+	JPanel c2 = new JPanel();
+	JPanel c3 = new JPanel();
+	JPanel c4 = new JPanel();
+	JPanel c5 = new JPanel();
 	
 	JButton b1 = new JButton("Red");
 	JButton b2 = new JButton("Green");
@@ -11,18 +16,6 @@ public class GUIexa implements ActionListener
 	JButton b4 = new JButton("Yellow");
 	JButton b5 = new JButton("Pink");
 
-	JFrame j1 = new JFrame();
-	JFrame j2 = new JFrame();
-	JFrame j3 = new JFrame();
-	JFrame j4 = new JFrame();
-	JFrame j5 = new JFrame();
-	
-	JPanel c1 = new JPanel();
-	JPanel c2 = new JPanel();
-	JPanel c3 = new JPanel();
-	JPanel c4 = new JPanel();
-	JPanel c5 = new JPanel();
-	
 	JCheckBox cb1 = new JCheckBox("Left");
 	JCheckBox cb2 = new JCheckBox("Right");
 	JCheckBox cb3 = new JCheckBox("Top");
@@ -42,7 +35,6 @@ public class GUIexa implements ActionListener
 		Container cn = jf.getContentPane();
 		GUIexa ad = new GUIexa();
 		ad.addComponent(cn);
-		
 	}
 	
 	public void addComponent(Container cn)
@@ -72,8 +64,7 @@ public class GUIexa implements ActionListener
 		b3.addActionListener(this);
 		b4.addActionListener(this);
 		b5.addActionListener(this);
-		
-}
+	}
 	
 	public void actionPerformed(ActionEvent ae)
 	{
